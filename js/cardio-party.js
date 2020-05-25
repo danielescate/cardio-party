@@ -1,4 +1,4 @@
-///// CARDIO PARTY /////
+////// CARDIO PARTY //////
 function preview1() {
     document.getElementById('position').innerHTML = 'Jump squats';
     document.getElementById('one').focus();
