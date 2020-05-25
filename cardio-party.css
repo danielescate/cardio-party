@@ -85,7 +85,7 @@ iframe {
     width: 100%;
 }
 
-.slider{
+.controler{
     padding: 0 15em 0 15em;
     display: grid;
     grid-gap: 3em;
@@ -93,7 +93,7 @@ iframe {
     margin-bottom: 1em;
 }
 
-.slide{
+.show{
     background-color: #99D0DE;
     color: white;
     border-radius: 1em;
