@@ -1,7 +1,26 @@
-var btnContainer = document.getElementById("slider");
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+
+
+
+
+
+
+
+
+var btnContainer = document.getElementById("controler");
 
 // Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("slide");
+var btns = btnContainer.getElementsByClassName("show");
 
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
