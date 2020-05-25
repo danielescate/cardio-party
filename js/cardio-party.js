@@ -1,4 +1,9 @@
 ///// CARDIO PARTY /////
+var button = document.getElementById("start");
+
+button.addEventListener('click', (event) => {
+   startTime();
+});
 
 ///// ROUND 1 /////
 function startTime() {
