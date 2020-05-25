@@ -1,7 +1,7 @@
 ///// CARDIO PARTY /////
 
 ///// ROUND 1 /////
-function startTime() {
+function start() {
     var intro = 5;
     var elem = document.getElementById('on');
     var timerOut = setInterval(preCount, 1000);
