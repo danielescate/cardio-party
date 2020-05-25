@@ -103,7 +103,11 @@ iframe {
     text-align: center;
 }
 
-.active, .show:hover {
+.active {
+    background-color: #739CA7;
+}
+
+.show:hover {
     background-color: #739CA7;
 }
 
