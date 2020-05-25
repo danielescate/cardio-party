@@ -1,58 +1,9 @@
-var btnContainer = document.getElementsByClassName("controler");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("show");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-
-    // If there's no active class
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
-
-    // Add the active class to the current/clicked button
-    this.className += " active";
-  });
-}
-
-
-function preview1() {
-    document.getElementById('position').innerHTML = 'Jump squats';
-    document.getElementById('one').click();
-}
-
-function preview2() {
-    document.getElementById('position').innerHTML = 'Plank toe taps';
-    document.getElementById('two').click();
-}
-
-function preview3() {
-    document.getElementById('position').innerHTML = 'Burpees';
-    document.getElementById('three').click();
-}
-
-function preview4() {
-    document.getElementById('position').innerHTML = 'Narrow Squats';
-    document.getElementById('four').click();
-}
-
-function preview5() {
-    document.getElementById('position').innerHTML = 'Mountain climbers';
-    document.getElementById('five').click();
-}
-
-
-
 ///// CARDIO PARTY /////
 
 ///// ROUND 1 /////
 function startTime() {
     var intro = 5;
     var elem = document.getElementById('on');
-    var sec = document.getElementById('sec');
     var timerOut = setInterval(preCount, 1000);
     var whistle = new Audio(src = 'https://raw.githubusercontent.com/danielescate/cardio-party/master/Whistle.mp3');
 
@@ -95,7 +46,7 @@ function startTime() {
         function breakTime() {
             if (rest == -1) {
                 clearInterval(timeId);
-                document.getElementById('on').innerHTML = "Next!";
+                document.getElementById('on').innerHTML = "Next move!";
                 preview2();
                 startTime2();
             } else {
@@ -150,7 +101,7 @@ function startTime() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview3();
                     startTime3();
                 } else {
@@ -206,7 +157,7 @@ function startTime() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next Move!";
                     preview4();
                     startTime4();
                 } else {
@@ -262,7 +213,7 @@ function startTime() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview5();
                     startTime5();
                 } else {
@@ -331,7 +282,7 @@ function startTime() {
 
 ///// ROUND 2 /////
 function startTimeRound2() {
-    document.getElementById('round').innerHTML = "2";
+    document.getElementById('round').innerHTML = "Round 2";
     var intro = 5;
     var elem = document.getElementById('on');
     var sec = document.getElementById('sec');
@@ -377,7 +328,7 @@ function startTimeRound2() {
         function breakTime() {
             if (rest == -1) {
                 clearInterval(timeId);
-                document.getElementById('on').innerHTML = "Next!";
+                document.getElementById('on').innerHTML = "Next move!";
                 preview2();
                 startTime2();
             } else {
@@ -432,7 +383,7 @@ function startTimeRound2() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview3();
                     startTime3();
                 } else {
@@ -488,7 +439,7 @@ function startTimeRound2() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview4();
                     startTime4();
                 } else {
@@ -544,7 +495,7 @@ function startTimeRound2() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview5();
                     startTime5();
                 } else {
@@ -599,7 +550,7 @@ function startTimeRound2() {
             function start() {
                 if (timeLeft == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Round 2!";
+                    document.getElementById('on').innerHTML = "Round 3!";
                     whistle.play();
                     startTimeRound3();
                 } else {
@@ -613,7 +564,7 @@ function startTimeRound2() {
 
 ///// ROUND 3 /////
 function startTimeRound3() {
-    document.getElementById('round').innerHTML = "3";
+    document.getElementById('round').innerHTML = "Round 3";
     var intro = 5;
     var elem = document.getElementById('on');
     var sec = document.getElementById('sec');
@@ -659,7 +610,7 @@ function startTimeRound3() {
         function breakTime() {
             if (rest == -1) {
                 clearInterval(timeId);
-                document.getElementById('on').innerHTML = "Next!";
+                document.getElementById('on').innerHTML = "Next move!";
                 preview2();
                 startTime2();
             } else {
@@ -714,7 +665,7 @@ function startTimeRound3() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview3();
                     startTime3();
                 } else {
@@ -770,7 +721,7 @@ function startTimeRound3() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview4();
                     startTime4();
                 } else {
@@ -826,7 +777,7 @@ function startTimeRound3() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview5();
                     startTime5();
                 } else {
@@ -895,7 +846,7 @@ function startTimeRound3() {
 
 ///// ROUND 4 /////
 function startTimeRound4() {
-    document.getElementById('round').innerHTML = "4";
+    document.getElementById('round').innerHTML = "Round 4";
     var intro = 5;
     var elem = document.getElementById('on');
     var sec = document.getElementById('sec');
@@ -996,7 +947,7 @@ function startTimeRound4() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview3();
                     startTime3();
                 } else {
@@ -1052,7 +1003,7 @@ function startTimeRound4() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview4();
                     startTime4();
                 } else {
@@ -1108,7 +1059,7 @@ function startTimeRound4() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview5();
                     startTime5();
                 } else {
@@ -1176,7 +1127,7 @@ function startTimeRound4() {
 
 ///// ROUND 5 /////
 function startTimeRound5() {
-    document.getElementById('round').innerHTML = "5";
+    document.getElementById('round').innerHTML = "Round 5";
     var intro = 5;
     var elem = document.getElementById('on');
     var sec = document.getElementById('sec');
@@ -1222,7 +1173,7 @@ function startTimeRound5() {
         function breakTime() {
             if (rest == -1) {
                 clearInterval(timeId);
-                document.getElementById('on').innerHTML = "Next!";
+                document.getElementById('on').innerHTML = "Next move!";
                 preview2();
                 startTime2();
             } else {
@@ -1277,7 +1228,7 @@ function startTimeRound5() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview3();
                     startTime3();
                 } else {
@@ -1333,7 +1284,7 @@ function startTimeRound5() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview4();
                     startTime4();
                 } else {
@@ -1389,7 +1340,7 @@ function startTimeRound5() {
             function breakTime() {
                 if (rest == -1) {
                     clearInterval(timeId);
-                    document.getElementById('on').innerHTML = "Next!";
+                    document.getElementById('on').innerHTML = "Next move!";
                     preview5();
                     startTime5();
                 } else {
