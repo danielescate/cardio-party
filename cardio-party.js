@@ -1,23 +1,4 @@
-function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
-}
-
-
-
-function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
-}
-
-
-
-
-
-
-
-
-var btnContainer = document.getElementById("controler");
+var btnContainer = document.getElementByClassName("controler");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("show");
