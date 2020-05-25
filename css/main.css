@@ -85,7 +85,7 @@ iframe {
     width: 100%;
 }
 
-.controler{
+#controler{
     padding: 0 15em 0 15em;
     display: grid;
     grid-gap: 3em;
