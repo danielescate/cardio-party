@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    
+    
+    <title>Cardio Party</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href=""><img src="img/alw-logo.png" alt="Avery Lane Wellness"></a>
+        </div>
+
+        <div class="day">
+            <h1>Week 1 - Monday</h1>
+        </div>
+    </div>
+
+    <div class="content" id="move">
+        <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <div class="move" id="move1">
+            <div class="move-img">
+                <img src="img/jumping-jack-pose.png" alt="move">
+            </div>
+            <div class="move-text">
+                <h1 id="mode">Round <span id="round">1</span></h1>
+                <p id="position">Jump squats</p>
+                <p id="timer"><span id="on">50</span></p>
+                <p id="sec">seconds</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="controler" id="slider">
+        <div class="show" id="start" onclick="startTime()" onclick="preview1()">
+            <p>Start</p>
+        </div>
+        <div class="show" id="one" onclick="preview1()">
+            <p>1</p>
+        </div>
+        <div class="show" id="two" onclick="preview2()">
+            <p>2</p>
+        </div>
+        <div class="show" id="three" onclick="preview3()">
+            <p>3</p>           
+        </div>
+        <div class="show" id="four" onclick="preview4()">
+            <p>4</p>
+        </div>
+        <div class="show" id="five" onclick="preview5()">
+            <p>5</p>
+        </div>
+    </div>
+    
+    <script src="https://danielescate.github.io/cardio-party/cardio-party.js"></script>
+</body>
