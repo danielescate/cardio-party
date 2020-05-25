@@ -54,7 +54,7 @@ function startTime() {
     var elem = document.getElementById('on');
     var sec = document.getElementById('sec');
     var timerOut = setInterval(preCount, 1000);
-    var whistle = new Audio(src = 'audio/Whistle.mp3');
+    var whistle = new Audio(src = 'https://raw.githubusercontent.com/danielescate/cardio-party/master/Whistle%20Blow%20Sound.mp3');
 
 
     function preCount () {
