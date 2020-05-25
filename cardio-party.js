@@ -1,4 +1,4 @@
-var btnContainer = document.getElementById("controler");
+var btnContainer = document.getElementsByClassName("controler");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("show");
