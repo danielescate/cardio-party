@@ -51,7 +51,7 @@ function preview5() {
 ///// ROUND 1 /////
 function startTime() {
     var intro = 5;
-    var elem = document.getElementsByClassName('on');
+    var elem = document.getElementById('on');
     var sec = document.getElementById('sec');
     var timerOut = setInterval(preCount, 1000);
     var whistle = new Audio(src = 'https://raw.githubusercontent.com/danielescate/cardio-party/master/Whistle.mp3');
