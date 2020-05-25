@@ -1,4 +1,29 @@
 ///// CARDIO PARTY /////
+function preview1() {
+    document.getElementById('position').innerHTML = 'Jump squats';
+    document.getElementById('one').focus();
+}
+
+function preview2() {
+    document.getElementById('position').innerHTML = 'Plank toe taps';
+    document.getElementById('two').focus();
+}
+
+function preview3() {
+    document.getElementById('position').innerHTML = 'Burpees';
+    document.getElementById('three').focus();
+}
+
+function preview4() {
+    document.getElementById('position').innerHTML = 'Narrow Squats';
+    document.getElementById('four').focus();
+}
+
+function preview5() {
+    document.getElementById('position').innerHTML = 'Mountain climbers';
+    document.getElementById('five').focus();
+}
+
 var button = document.getElementById("start");
 
 button.addEventListener('click', (event) => {
