@@ -1,9 +1,5 @@
 @import url("https://use.typekit.net/ddd8vkh.css");
 
-/* body {
-    height: 100vh;
-} */
-
 h1 {
     font-family: sofia-pro, sans-serif;
     font-weight: 700;
@@ -89,7 +85,7 @@ iframe {
     width: 100%;
 }
 
-.slider{
+.controler{
     padding: 0 15em 0 15em;
     display: grid;
     grid-gap: 3em;
@@ -97,7 +93,7 @@ iframe {
     margin-bottom: 1em;
 }
 
-.slide{
+.show{
     background-color: #99D0DE;
     color: white;
     border-radius: 1em;
